@@ -4,25 +4,16 @@
     "https://checkstyle.org/dtds/configuration_1_3.dtd">
 <module name="Checker">
 
-    <!-- Vérifie qu'il n'y a pas de tabulations dans le code -->
-    <!-- FileTabCharacter doit être DANS Checker, pas dans TreeWalker -->
+    <!-- Règles au niveau FICHIER - dans Checker directement -->
     <module name="FileTabCharacter"/>
+    <module name="LineLength">
+        <property name="max" value="120"/>
+    </module>
 
+    <!-- Règles au niveau CODE - dans TreeWalker -->
     <module name="TreeWalker">
-
-        <!-- Vérifie que les blocs vides sont interdits ex: if(){} -->
         <module name="EmptyBlock"/>
-
-        <!-- Vérifie que les accolades sont présentes partout -->
         <module name="NeedBraces"/>
-
-        <!-- Vérifie que les lignes ne dépassent pas 120 caractères -->
-        <module name="LineLength">
-            <property name="max" value="120"/>
-        </module>
-
     </module>
 
 </module>
-
-
