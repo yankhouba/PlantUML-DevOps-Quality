@@ -1,6 +1,7 @@
+package com.plantuml.validator;
+
 /**
  * Service de validation de diagrammes PlantUML.
- * Corrige la faille de faible couverture de tests identifiée dans le TP1.
  */
 public class DiagramValidator {
 

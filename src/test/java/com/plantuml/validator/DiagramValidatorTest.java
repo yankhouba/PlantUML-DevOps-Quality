@@ -1,4 +1,9 @@
+package com.plantuml.validator;
+
 import org.junit.jupiter.api.Test;
+
+import com.plantuml.validator.DiagramValidator;
+
 import org.junit.jupiter.api.BeforeEach;
 import static org.junit.jupiter.api.Assertions.*;
 
